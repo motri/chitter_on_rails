@@ -20,6 +20,9 @@ gem 'jbuilder'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug' , platform: :mri
+  gem "capybara", "~> 2.13"
+gem "rspec-rails", "~> 3.5"
+gem "selenium-webdriver"
 end
 
 group :development do
@@ -34,6 +37,7 @@ group :test do
   gem 'minitest-reporters'
   gem 'guard'
   gem 'guard-minitest'
+
 end
 
 group :production do
